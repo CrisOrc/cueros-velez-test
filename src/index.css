@@ -4,13 +4,31 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #000;
+  background-color: #efefef;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+*,
+div,
+article,
+aside,
+figure {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+}
+
+img {
+  aspect-ratio: 1/1;
+  object-fit: contain;
 }
 
 a {

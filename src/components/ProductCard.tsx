@@ -3,13 +3,12 @@ import { useCart } from "../context/CartContext";
 import type { Product, SKU } from "../types";
 
 export default function ProductCard({ product }: { product: Product }) {
-  // Tomamos el primer SKU como referencia rápida
   const sku: SKU | undefined = product.items[0];
   const image = sku?.images[0];
   const price = sku?.sellers[0].commertialOffer.Price;
   const { add } = useCart();
 
-  if (!sku || !image) return null; // datos incompletos
+  if (!sku || !image) return null;
 
   return (
     <article>
