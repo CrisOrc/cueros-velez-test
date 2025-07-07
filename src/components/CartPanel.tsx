@@ -42,7 +42,6 @@ export default function CartPanel() {
 
   useEffect(() => {
     if (!items.length) {
-      setPreview(null);
       setActiveIdx(0);
     } else if (!preview) {
       setPreview(items[0]);
@@ -59,12 +58,10 @@ export default function CartPanel() {
 
   const clearAll = () => {
     clear();
-    setPreview(null);
   };
 
   const removeItem = (skuId: string) => {
     remove(skuId);
-    if (preview?.skuId === skuId) setPreview(null);
   };
 
   const THUMB_H = 110;
