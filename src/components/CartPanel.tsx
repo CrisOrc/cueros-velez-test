@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useCart } from "../context/CartContext";
-import "./cartPannel.css";
+import "./cartPanel.css";
 
 const CartSvg = () => (
   <svg
